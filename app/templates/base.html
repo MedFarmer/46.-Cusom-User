@@ -11,7 +11,7 @@
 <body>  
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">    
         <div class="container-fluid">
-            <a class="navbar-brand" href=""> SignUp Custom Creation </a> 
+            <a class="navbar-brand" href="{% url 'home' %}"> Home page </a> 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,11 +23,14 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">                        
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="">Catalague</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'login' %}">Login</a>
                         </li>                      
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="{% url 'signup' %}"><span class="badge text-bg-success rounded-pill">Signup</span></a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'logout' %}">Logout</a>
+                        </li>  
                     </ul>                
                 </div>
             </div>
